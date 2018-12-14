@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Amazon search engine",
+  "description": "Adds a search engine that searches amazon.de",
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "55"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Amazon",
+      "search_url": "https://www.amazon.de/s/?field-keywords={searchTerms}",
+      "keyword": "amzn",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
